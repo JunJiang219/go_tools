@@ -1,0 +1,8 @@
+// Package main 程序主入口
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World!")
+}
