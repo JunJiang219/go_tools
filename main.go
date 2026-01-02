@@ -1,8 +1,10 @@
 // Package main 程序主入口
 package main
 
-import "fmt"
+import (
+	"github.com/go_tools/cmd"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	cmd.Execute()
 }
