@@ -1,0 +1,12 @@
+# 版本配置
+version: 1.0.0
+
+# 目录配置
+dir:
+  log: ./logs # 日志目录
+  sound: sounds # 声音目录
+  spine: spines # spine目录
+  GameDefine: scripts/common # GameDefine目录
+  library:
+    - bundle1
+    - bundle2

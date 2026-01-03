@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 var versionCmd = &cobra.Command{
@@ -11,7 +12,8 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of mycli",
 	Long:  `All software has versions. This is mycli's`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("mycli version 1.0.0")
+		version := viper.GetString("version")
+		fmt.Printf("mycli version %s\n", version)
 	},
 }
 
